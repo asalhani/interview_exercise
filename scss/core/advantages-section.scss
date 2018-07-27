@@ -1,0 +1,39 @@
+#vorteile {
+    padding-bottom: 40px;
+    h1{
+        font-size: 4rem;
+        text-transform: uppercase;
+        text-align: center;
+        color: #2377c0;
+        margin: 0;
+    }
+
+  h2{
+        font-size: 1.4rem;
+        color: #b21e22;
+        text-align: center;
+        margin: 10px 0 5px 0;
+    }  
+
+    p {
+        text-align: justify;
+        span{
+            font-size: 0.8em;
+            display: block;
+            margin-top: 15px;
+        }
+    }
+
+    & .row 
+    {
+        div {
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+        }
+    }
+
+    & .row div:nth-child(2){
+        margin: 0 5%;
+    }
+}

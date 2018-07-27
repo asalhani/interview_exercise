@@ -1,0 +1,40 @@
+.mainSection{
+    width: 100%;
+}
+
+.mainSection-container{
+    position: relative;
+    max-height: 60vh;
+    overflow: hidden;
+    margin: 0;
+    font-size: 0;
+
+    img{
+        position: relative;
+        opacity: 0.8;
+    }
+
+    h1{
+        position: absolute;
+        font-size: 3rem;
+        line-height: 1.1;
+        color: rgb(35, 119, 192);
+        bottom: 10px;
+        left: 20px;
+        width: 30%;
+        margin: 0;
+        z-index: 10;
+        text-shadow: -2px 0 #ffffff, 0 2px #ffffff, 2px 0 #ffffff, 0 -2px #ffffff,
+                     -2px -2px #ffffff, 2px 2px #ffffff, -2px 2px #ffffff, 2px -2px #ffffff;
+    }
+
+    img{
+        margin-top: -10%;
+    }
+
+    h1{
+        font-size: 8rem;
+        bottom: 2rem;
+        left: 60px;
+    }
+}

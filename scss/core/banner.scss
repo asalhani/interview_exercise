@@ -1,0 +1,26 @@
+
+.banner{
+    position: relative;
+    background-color: #2377c0;
+    color: #ffffff;
+    margin: 0;
+    padding: 60px 60px;
+
+    p{
+        width: calc(100% - 220px);
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin: 0;
+    }
+
+    & .btn{
+        position: absolute;
+        bottom: 20px;
+        right: 60px;
+        margin: 0;
+    }
+
+    & .banner p:nth-of-type(n+2){
+        margin-top: 15px;
+    }
+}

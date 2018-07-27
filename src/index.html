@@ -23,54 +23,285 @@
 </head>
 
 <body>
-    <header>
-        <div id="logo" class="menuUp">
-            <h1>Adam Bray.</h1>
-            <div id="navToggle">
-                <a href="#">Menu</a>
+        <header>
+            <img class="wub_logo" src="images/wub_logo.svg" alt="wub logo">
+            <a id="menuToggle" href="#">menuToggle</a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#studie">Studie</a></li>
+                    <li><a href="#vorteile">Vorteile</a></li>
+                    <li><a href="#magazine">Magazine</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="studie">
+            <div class="mainSection-container">
+                <h1>DAS RECHNET SiCH</h1>
+                <img class="mainSection" src="images/aufmacher.jpg" alt="mainSection">
             </div>
-        </div>
-        <nav>
+            <div class="banner">
+                <p>Es ist uns sehr wichtig, Sie als Partner optimal in Ihrem Apothekenalltag zu unterst&uuml;tzen.</p>
+                <p>Damit uns dies gelingt, haben wir beim renommierten Marktforschungsinstitut GfK eine Studie in Auftrag gegeben, die den Wert der Wort & Bild Apotheken- Kundenmagazine f&uuml;r Ihre Apotheke untersucht.</p>
+                <a target="_blank" class="btn lightBtn" href="pdf/Studieninfo.pdf" onclick="return tag.click.send({elem:this, name:'Apothekenumsatz', chapter1:'Button', chapter2:'Studie-komplett-gelesen', chapter3:'', level2:'23', type:'action'});">Hier Studie<br>komplett lesen</a>
+            </div>
+        </section>
+        
+        <section id="vorteile">
+            <div class="row"><h1>Vorteile</h1></div>
+            <div class="row">
+                <div>
+                    <img class="icon" src="images/kundenbindung.svg" alt="icon">
+                    <h2>Bessere Kundenbindung</h2>
+                    <p>Die Leser der Apotheken Umschau und aller weiteren Titel des Wort &amp; Bild Verlags identifizieren sich mit den hochwertigen Inhalten, die wir ihnen bieten. Die Lesedauer des Heftes beträgt 85 Minuten*. In dieser Zeit lernt der interessierte Leser viel &uuml;ber die wichtigen Leistungen der Apotheker, er erhält Tipps, wie man fit und gesund bleibt und welche Therapiemaßnahmen „State of the art“ sind.<br><span>*Quelle: Copytest Apotheken Umschau 1B/18, GfK MCR</span></p>
+                </div><!--            
+             --><div>
+                    <img class="icon" src="images/wachstum.svg" alt="icon">
+                    <h2>Höherer Umsatz</h2>
+                    <p>Wer mehr weiß, kann konkrete Entscheidungen treffen. Die regelmäßigen Leser der Apotheken Umschau schätzen die Angebote und Leistungen der Apotheke und investieren aus diesem Grund mehr f&uuml;r ihre Gesundheit. Während ein Nicht-Leser pro Monat im Durchschnitt 20,40 EUR in der Apotheke ausgibt, so kauft der regelmäßige Leser f&uuml;r 38,20 EUR* ein. <br><span>Quelle: Repräsentative Bevölkerungsbefragung der GfK
+    Marktforschung, 11/2017</span></p>
+                </div><!--            
+             --><div>
+                    <img class="icon" src="images/qualitaet.svg" alt="icon">
+                    <h2>Redaktionelle Qualität</h2>
+                    <p>Bei der Apotheken Umschau können Sie sicher sein, dass die Beiträge dem höchsten journalistischen Niveau entsprechen und wir auf jeder Seite unseres Heftes die Apotheke vor Ort stärken. Wir sind Ihr Partner in Sachen Kommunikation und Kundenbindung.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="magazine">
+            <div>
+                <img src="images/AU_Logo.png" alt="Apotheken Umschau Logo">
+                <h2>Deutschlands Magazin Nr. 1 – Qualität, Orientierung und Glaubw&uuml;rdigkeit</h2>
+                <p>Wer sich &uuml;ber gesundheitliche und medizinische Themen bestens informieren will, greift gerne zur Apotheken Umschau. Das Magazin, das exklusiv nur in den Apotheken erhältlich ist, steht f&uuml;r seriöse und vertrauensw&uuml;rdige Gesundheits-Information. Die Hauptzielgruppe ist der wichtigste Kundenkreis jeder Apotheke: Frauen und Männer &uuml;ber 40 Jahre.</p>
+                <p class="bold">Sie ist die vertraute Stimme des Apothekers, die jeder versteht.</p>
+                <a target="_blank" href="pdf/Apotheken_Umschau_Studie.pdf" class="btn" onclick="return tag.click.send({elem:this, name:'Apothekenumsatz', chapter1:'Button', chapter2:'Download-Studie', chapter3:'AU', level2:'23', type:'action'});">Studie</a>
+            </div>
+            <div>
+                <img src="images/SR_Logo.png" alt="Senioren Ratgeber Logo">
+                <h2>Die meistgelesene Senioren-Zeitschrift</h2>
+                <p>Der Senioren Ratgeber steht f&uuml;r das neue Bild vom Alter – mit vielen n&uuml;tzlichen Gesundheits-Ratschlägen, die ganz auf die Bed&uuml;rfnisse der älteren Kunden Ihrer Apotheke zugeschnitten sind.</p>
+                <p class="bold">Der Senioren Ratgeber ist das erfolgreiche Gesundheits-Journal f&uuml;r Senioren und damit der bewährte Spezial-Service
+    f&uuml;r Ihre Apotheke.</p>
+                <a target="_blank" href="pdf/Senioren_Ratgeber_Studie.pdf" class="btn" onclick="return tag.click.send({elem:this, name:'Apothekenumsatz', chapter1:'Button', chapter2:'Download-Studie', chapter3:'SR', level2:'23', type:'action'});">Studie</a>
+            </div>
+            <div>
+                <img src="images/DR_Logo.png" alt="Diabetes Ratgeber Logo">
+                <h2>Hilfe zur Selbsthilfe f&uuml;r Millionen Diabetes-Betroffene und ihre Angehörigen</h2>
+                <p>Der Diabetes Ratgeber ist das auflagenstärkste und erfolgreichste Diabetes-Magazin in Deutschland und damit ein bewährter Spezial-Service f&uuml;r die Kunden Ihrer Apotheke. Bis zu sechs Millionen Menschen sind nach Meinung von Experten hierzulande betroffen – eingerechnet mehr als eine Million, die von ihrer Krankheit noch nichts ahnen.</p>
+                <p class="bold">Der Diabetes Ratgeber ist der ideale Begleiter f&uuml;r Patienten mit Typ-1- und Typ-2-Diabetes.</p>
+                <a target="_blank" href="pdf/Diabetes_Ratgeber_Studie.pdf" class="btn" onclick="return tag.click.send({elem:this, name:'Apothekenumsatz', chapter1:'Button', chapter2:'Download-Studie', chapter3:'DR', level2:'23', type:'action'});">Studie</a>
+            </div>
+            <div>
+                <img src="images/BF_Logo.png" alt="Baby und Familie Logo">
+                <h2>Bietet alles, was der jungen Familie guttut</h2>
+                <p>Baby und Familie ist die sichere Orientierungshilfe f&uuml;r Schwangere und junge Eltern mit Kindern bis zum Grundschulalter –
+    ganz gleich, ob es um die Gesundheit des Kindes, die Erziehung oder das Wohlbefinden der gesamten Familie geht.</p>
+                <p class="bold">Deutschlands Eltern und Großeltern lieben Baby und Familie, das ihnen in Ihrer Apotheke &uuml;berreicht wird.</p>
+                <a target="_blank" href="pdf/Baby_und_Familie_Studie.pdf" class="btn" onclick="return tag.click.send({elem:this, name:'Apothekenumsatz', chapter1:'Button', chapter2:'Download-Studie', chapter3:'BF', level2:'23', type:'action'});">Studie</a>
+            </div>
+        </section>
+        
+        
+        <section id="kontakt">
+            <h1>Wenn aus Wertschätzung<br>Wertschöpfung wird</h1>
+            <input id="kontaktChk" type="checkbox">
+            <label for="kontaktChk" class="btn lightBtn"> Bestellung </label>
+            <form id="kontaktForm" action="php/kontakt.php" method="post">
+                <label for="apotheke"> Apotheke*: </label>
+                <input id="apotheke" name="apotheke" type="text" required>
+                <span class="err">F&uuml;llen Sie bitte alle Pflichtfelder aus!</span>
+                <label for="name">Vorname, Name*: </label>
+                <input id="name" name="name" type="text" required>
+                <span class="err">F&uuml;llen Sie bitte alle Pflichtfelder aus!</span>
+                <label for="email"> E-Mail Adresse*: </label>
+                <input id="email" name="email" type="email" required>
+                <span class="err">Bitte geben Sie eine g&uuml;ltige E-Mail Adresse an!</span>
+                <label for="nachricht"> Ihre Nachricht: </label>
+                <textarea name="nachricht" id="nachricht" cols="30" rows="10"></textarea>
+                <span class="err">F&uuml;llen Sie bitte alle Pflichtfelder aus!</span>
+                <input type="checkbox" id="datenschutz" name="datenschutz" required>
+                <label for="datenschutz">Ich habe die <a class="openOverlay" href="#datenschutzOverlay">Datenschutzhinweise</a> gelesen</label>
+                <span class="err">F&uuml;llen Sie bitte alle Pflichtfelder aus!</span>
+                <input class="btn lightBtn" type="submit" value="Senden">
+            </form>
+            <p id="message"></p>
+        </section>
+        
+        <footer>
             <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Blog
-                        <span class="toggle">Expand</span>
-                        <span class="caret"></span>
-                    </a>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">Articles</a>
-                            </li>
-                            <li>
-                                <a href="#">Tutorials</a>
-                            </li>
-                            <li>
-                                <a href="#">Humour</a>
-                            </li>
-                            <li>
-                                <a href="#">Gaming</a>
-                            </li>
-                            <li>
-                                <a href="#">Music</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </li>
-                <li>
-                    <a href="#">Forum</a>
-                </li>
-                <li>
-                    <a href="#">Help</a>
-                </li>
+                <li><a class="openOverlay" href="#impressumOverlay">Impressum</a></li>
+                <li><a class="openOverlay" href="#datenschutzOverlay">Datenschutz</a></li>
+                <li>© Wort &amp; Bild Verlag</li>
             </ul>
-        </nav>
-    </header>
+        </footer>
+        
+        <a href="#" id="toTop">&#8743;</a>
+        
+        
+        <!-- <div id="sticky">
+            <div class="label">Kontakt</div>
+            <p>Sie haben Fragen und wollen Kontakt zu uns aufnehmen? Sprechen Sie uns an.</p>
+            <p>Kostenfreie Rufnummer<br>
+            <a href="tel:08008678670">0800 / 867 867 0 </a><br><a href="mailto:vertrieb@wortundbildverlag.de" onclick="return tag.click.send({elem:this, name:'Apothekenumsatz', chapter1:'Link', chapter2:'E-Mail-Adresse-Sticky-Label', chapter3:'', level2:'23', type:'action'});">vertrieb@wortundbildverlag.de</a></p>
+            <p>oder benutzen Sie unser <a href="#kontakt">Kontaktformular</a>.</p>
+        </div> -->
+        
+        <div class="overlay">
+            <a href="#" class="closeOverlay">X</a>
+            <div id="impressumOverlay">
+                <div>
+                    <h3>Impressum</h3>
+                    <br>
+                    <p>Anbieterin dieses Internetportals im Sinne von § 5 Abs. 1 Telemediengesetz ist:</p>
+                    <p class="bold">Wort &amp; Bild Verlag Konradshöhe GmbH &amp; Co. KG</p>
+                    <p>Konradshöhe 1</p>
+                    <p>82065 Baierbrunn bei M&uuml;nchen</p>
+                    <p>Handelsregister: Amtsgericht M&uuml;nchen HRA 44980</p>
+                    <p>USt-ID: DE 130750628</p>
+                    <p>Vertretungsberechtigte: Verlag Konradshöhe GmbH</p>
+                    <p>Konradshöhe 1, 82065 Baierbrunn</p>
+                    <p>Handelsregister: Amtsgericht M&uuml;nchen HRB 80411</p>
+                    <p>diese vertreten durch ihre Geschäftsf&uuml;hrer:</p>
+                    <p>Andreas Arntzen (Vorsitzender),</p>
+                    <p>Dr. Dennis Ballwieser</p>
+                    <p>Gegr&uuml;ndet von Verleger Rolf Becker †</p>
+                    <p class="bold">Kontakt:</p>
+                    <p>Telefon: (089) 74433-0</p>
+                    <p>Fax: (089) 74433-209</p>
+                    <p>E-Mail: <a href="mailto:vertrieb@wortundbildverlag.de">vertrieb@wortundbildverlag.de</a></p>
+                    <hr>
+                    <br>
+                    Verantwortlich im Sinne § 55 Abs. 2 RStV:
+                    Jan Wagner, Geschäftsanschrift: Konradshöhe, 82065 Baierbrunn
+                    <p class="bold">Streitbeilegungsverfahren nach dem Verbraucherstreitbeilegungsgesetz – VSBG</p>
+                    <p>Wir sind nicht bereit und nicht verpflichtet an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
+                    teilzunehmen. </p>
+                </div>
+            </div>
+            <div id="datenschutzOverlay">
+                   <div>
+                    <h3>Datenschutz</h3>
+                    <p>Wir, die Wort &amp; Bild Verlag Konradshöhe GmbH &amp; Co. KG (Konradshöhe 1, 82065 Baierbrunn bei M&uuml;nchen), 
+                    nehmen den Schutz der personenbezogenen Daten der Nutzer unserer Internetangebote sehr ernst. Wir haben 
+                    technische und organisatorische Maßnahmen getroffen, die sicherstellen, dass die Vorschriften &uuml;ber 
+                    den Datenschutz sowohl von uns als auch von externen Dienstleistern beachtet werden.</p>
+                    <p>Im Zuge der Weiterentwicklung unserer Dienste und der Implementierung neuer Technologien ist es 
+                    möglich, dass Änderungen dieser Datenschutzerklärung erforderlich werden. Daher empfehlen wir Ihnen, 
+                    sich diese Datenschutzerklärung regelmäßig, am besten bei jedem Besuch der Seite, erneut anzusehen. 
+                    Durch das Datum der letzten Änderung am Ende des Textes erkennen Sie sofort, ob wir seit Ihrem letzten 
+                    Besuch Neuerungen vornehmen mussten.</p>
+                    <br>
+                    <p>Sie erreichen unseren Datenschutzbeauftragten wie folgt:</p>
+                     <br>
+                      Prof. Dr. Tobias Eggendorfer
+                      <p>Datenschutzbeauftragter<br>
+                      Wort &amp; Bild Verlag Konradshöhe GmbH &amp; Co. KG<br>
+                      Konradshöhe 1<br>
+                      82065 Baierbrunn bei M&uuml;nchen<br>
+                      <a href="mailto:datenschutz@wortundbildverlag.de">datenschutz@wortundbildverlag.de</a></p>
+                    <br>
+                     <p>Sie haben selbstverständlich jederzeit das Recht, von uns Auskunft &uuml;ber die &uuml;ber 
+                     Sie gespeicherten Daten zu verlangen, sowie, soweit uns das aufgrund der Rechtslage möglich 
+                     ist, die Löschung von Daten zu verlangen. Soweit eine Löschung nicht möglich ist, können 
+                     Sie einer weiteren Nutzung sowie einer Weitergabe - jeweils sofern aufgrund anderer 
+                     Gesetze zulässig - widersprechen. 
+                         Sollten Sie Fehler in den bei uns &uuml;ber Sie  gespeicherten Daten feststellen, haben Sie das Recht darauf, dass wir die Daten korrigieren.</p>
+                      <p>Sollten Sie Anlass zur Beschwerde haben, können Sie sich jederzeit an die f&uuml;r uns zuständige Datenschutzaufsichtsbehörde, 
+                      das Bayerische Landesamt f&uuml;r Datenschutzaufsicht (Promenade 27, 91522 Ansbach), wenden.</p>
+    
+    
+                    <p class="bold">Allgemeine Datenerhebung und Datenverarbeitung durch Wort &amp; Bild</p>
+                    <p>Wir erheben, verarbeiten oder nutzen personenbezogene Daten von Nutzern nur, soweit dies 
+                    f&uuml;r die Erbringung unserer Services und Dienstleistungen notwendig ist. </p>
+    <br>
+                    <p>
+            Die Daten, die Sie uns bei der Kontaktaufnahme &uuml;ber das Kontaktformular auf dieser Webseite, 
+            nutzen wir ausschließlich zur Bearbeitung Ihrer Kontaktanfrage. In diesem Fall werden die 
+            &uuml;bermittelten Kontaktdaten per E-Mail an das Mailpostfach der Vertriebsabteilunge weitergeleitet. 
+            Dazu geben wir die Angaben an die zuständigen Ansprechpartner im Haus weiter. Eine andere Weitergabe 
+            erfolgt nicht. Wir löschen die Daten nach Ablauf der gesetzlichen Fristen. <br><br>
+            Zusätzlich weisen wir daraufhin, dass die &Uuml;bertragung der E-Mails vom Mail-Server zu uns unverschl&uuml;sselt stattfindet.
+                    </p>
+                    <br>
+                    <p>
+                    Im Rahmen unseres Angebots f&uuml;r Sie beauftragen wir externe Dienstleister, wie z. B. technische 
+                    und Hosting-Dienstleister. Diese Dienstleister sind vertraglich zur Einhaltung der Datenschutzgesetze 
+                    verpflichtet, sie d&uuml;rfen insbesondere die Daten nicht f&uuml;r eigene Zwecke nutzen oder sie gar an Dritte 
+                    weitergeben. Diese Dienstleister nutzen die Daten ausschließlich, um uns zu unterst&uuml;tzen und arbeiten 
+                    mit Ihren Daten nur in unserem Auftrag ausschließlich auf unsere Weisung. Wir pr&uuml;fen jeden Dienstleister 
+                    vorher auf die von ihm zum Datenschutz und zur Datensicherheit getroffenen Maßnahmen. So stellen wir 
+                    den höchstmöglichen Schutz der personenbezogenen Daten sicher.
+    
+                    <p class="bold">Erhebung und Weitergabe von Daten beim Zugriff auf die Internetangebote von Wort &amp; Bild</p>
+                    <p>Beim Start und der Nutzung unserer Internetangebote werden aktuelle Informationen von unseren Servern
+                    geladen. Diese Zugriffe werden in einer Protokolldatei erfasst und dabei folgende Daten gespeichert:</p>
+                    <ul>
+                        <li>IP-Adresse des Gerätes</li>
+                        <li>Name der abgerufenen URL</li>
+                        <li>Datum und Uhrzeit des Abrufs</li>
+                        <li>&uuml;bertragene Datenmenge</li>
+                        <li>Meldung, ob der Abruf erfolgreich war</li>
+                        <li>Verwendeter Webbrowser</li>
+                    </ul>
+                    <p>Bei Störungen der Kommunikation zwischen der Website und dem Server können zur Fehleranalyse Auswertungen mit 
+                    gek&uuml;rzter IP-Adresse vorgenommen werden. Die gek&uuml;rzte IP-Adresse wird so lange gespeichert, wie dies zur 
+                    Fehlerbehebung notwendig ist, maximal 14 Tage. Eine dar&uuml;ber hinaus gehende Verarbeitung dieser personenbezogenen 
+                    Daten findet nicht statt. Die Daten werden von uns auf besonders gesch&uuml;tzten Servern in Deutschland gespeichert.</p>
+                    <p>Daten, die beim Zugriff auf unsere Internetangebote protokolliert worden sind, werden an Dritte nur &uuml;bermittelt, 
+                    soweit wir gesetzlich oder durch Gerichtsentscheidung dazu verpflichtet sind oder die Weitergabe zur 
+                    Rechts- oder Strafverfolgung erforderlich ist. Eine Weitergabe zu anderen nichtkommerziellen oder zu 
+                    kommerziellen Zwecken erfolgt nicht.</p>
+                    <p class="bold">AT Internet</p>  
+                    <p>Unsere digitalen Angebote verwenden einen Webanalysedienst der Firma AT Internet f&uuml;r die Auswertung der Daten, 
+                    die Ihr Internetbrowser beim Zugriff auf unsere digitalen Produkte &uuml;bermittelt, ergänzt wird das Erhebungsverfahren 
+                    durch den Einsatz von Cookies. Es handelt sich dabei um Datum und Uhrzeit des Seitenaufrufs, Webseiten-Adresse der 
+                    verweisenden Internetseite, abgerufene Datei, den HTTP Antwort-Code, Browsertyp und -version, Breite und Höhe des 
+                    Browserfensters, Farbtiefe, Betriebssystem sowie Ihre IP-Adresse. Die IP Adresse wird unmittelbar nach der Erhebung 
+                    durch den Server zur Datenerfassung des Tool-Anbieters und vor der weiteren Verarbeitung anonymisiert. Die Daten 
+                    des Datenerfassungs-Servers werden innerhalb 24 Stunden gelöscht. Ihre vollständige IP-Adresse wird folglich nicht 
+                    dauerhaft gespeichert, noch in Verbindung mit anderen Nutzungsdaten gebracht. Diese Daten werden getrennt von 
+                    anderen Daten gespeichert, die Sie im Rahmen der Nutzung unseres Angebotes eingeben. Die Zuordnung dieser Daten 
+                    zu einer bestimmten Person ist uns nicht möglich. Sie werden ausschließlich zu statistischen Analysezwecken, wie 
+                    der Verbesserung des Angebots, erhoben und verwendet. Die Server des Dienstleisters befinden sich in Mitgliedsstaaten 
+                    der EU.</p>
+                    <p>Mit der Nutzung unserer digitalen Angebote stimmen Sie der zuvor beschriebenen Vorgangsweise zur Analyse der
+                    Benutzung unserer Website zu. Weitere Informationen zum Messverfahren von AT Internet finden Sie auf der Website
+                    der
+                    AT Internet GmbH:
+                    <p><a href="http://www.atinternet.com/de/unternehmen/datenschutz/ressourcen/" target="_blank">www.atinternet.com/de/unternehmen/datenschutz/ressourcen/</a>
+                    </p>
+                    <p>Opt-Out: Sie können der Datenverarbeitung durch AT Internet unter folgendem Link widersprechen: <a
+                            href="http://www.xiti.com/de/optout.aspx" target="_blank">www.xiti.com/de/optout.aspx</a></p>
+    
+                    <p class="bold">Links zu Webseiten anderer Anbieter</p>
+                    <p>Unser Online-Angebot enthält Links zu Webseiten anderer Anbieter. Diese Anbieter haben ihre 
+                    jeweiligen Datenschutzbestimmungen, an die sie sich binden. Bitte lesen Sie sich deren Bestimmungen 
+                    ebenfalls genau durch.</p>
+                    <br>
+                    <p>Wort &amp; Bild Verlag Konradshöhe GmbH &amp; Co. KG
+                     <p>Diese Datenschutzerklärung wurde am 19.07.2017 aktualisiert.</p><br>
+                </div>
+            </div> 
+        </div>
+        <script type="text/javascript">
+            if (typeof ATInternet !== 'undefined') {
+                var tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: 'Apothekenumsatz',
+                    chapter1: 'Home',
+                    chapter2: '',
+                    chapter3: '',
+                    level2: '23'
+                });
+                tag.customVars.set({
+                    site: {
+                        6: '[https%3A%2F%2Fwww.apothekenumsatz.de]'
+                    }
+                });
+                tag.dispatch();
+            }
+        </script>
+    </body>
 
 </html>
